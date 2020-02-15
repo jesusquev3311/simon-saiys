@@ -90,7 +90,7 @@
       <div id="violet" class="color violeta right" data-color="violeta"></div>
       <div id="orange" class="color naranja left" data-color="naranja"></div>
       <div id="green" class="color verde right" data-color="verde"></div>
-      <button id="btn-start" class="btn-start" onclick="gameStart()">Empezar a jugar!</button>
+      <button id="btn-start" class="btn-start" onclick="gameStart()">Play Now!</button>
     </div>
     <script>
       //gameboard's Colors
@@ -151,7 +151,7 @@
         lightSequence(){
            for (let i = 0; i < this.level; i++){
              //getting the color
-              var color = this.numberToColor(this.sequence[i]);
+              const color = this.numberToColor(this.sequence[i]);
               //setting up the time between color change
               setTimeout(()=> this.lightColor(color), 1000 * i);
            }
